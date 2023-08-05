@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-image: url(./images/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.logo {
+    color: white;
+}
+
+.menu {
+    padding: 25px 0;
+}
+
+input,
+label {
+    display: none;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    color: white;
+}
+
+.balandlik {
+    height: 600px;
+}
+
+.banner h1 {
+    font-size: 98px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.banner span {
+    color: #4978FF;
+}
+
+.firstBox {
+    font-size: 25px;
+    font-weight: 200;
+    margin-bottom: 15px;
+}
+
+.firstBox p {
+    margin-bottom: 15px;
+}
+
+#first {
+    padding: 100px 0;
+}
+
+.btn {
+    padding: 10px 15px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+#second {
+    padding: 50px 0;
+    position: relative;
+}
+
+.mb-2 {
+    margin-bottom: 40px;
+}
+
+.secondBox {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    padding: 20px 30px;
+    background-color: white;
+}
+
+.secondBox img{
+    width: 50px;
+    margin-bottom: 15px;
+}
+
+.secondBox h2 {
+    margin-bottom: 15px;
+}
+
+#second::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+}
+
+.zIndex {
+    position: relative;
+    z-index: 10;
+}
+
+#third {
+    background-color: black;
+    /* padding-bottom: 50px; */
+}
+
+.whiteText {
+    color: #FFFFFF;
+}
+
+.thirdBox {
+    color: #FFFFFF;
+    margin-bottom: 50px;
+}
+
+.thirdBox h4 {
+    font-weight: 400;
+}
+
+.fourthBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    background-color: #4978FF;
+    margin-bottom: 25px;
+    color: #92AEFF;
+}
+
+#fourth {
+    padding: 50px 0;
+}
+
+.bg {
+
+    width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+    .banner h1 {
+        font-size: 50px;
+    }
+
+    label {
+        display: block;
+        color: white;
+        text-align: right;
+        cursor: pointer;
+        font-size: 30px;
+    }
+
+    nav ul {
+        display: block;
+        width: 400px;
+        height: 100vh;
+        background-color: black;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        text-align: center;
+        transition: .2s;
+    }
+
+    nav a {
+        padding: 25px;
+        display: block;
+        font-size: 24px;
+    }
+
+    nav a:hover {
+        background-color: #888;
+    }
+
+    input:checked~.mmmm {
+        left: 0;
+    }
+
+    #first {
+        padding: 50px 0;
+    }
+}
